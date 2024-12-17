@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-center">
         <div class="w-25">
             <app-formulario [tituloOperandoA]="tituloA" [tituloOperandoB]="tituloB" (notificarResultado)="recibirResultado($event)"></app-formulario>
-            <p class="text-center">Resultado: {{resultado}}</p>
+            <app-resultado [resultado]="resultado" />
         </div>
     </div>
 </div>
